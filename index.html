@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Udacity - Portfolio">
+    <meta name="author" content="Svitlana Konopatska">
+    <title>My Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="css/bootstrap.min.3.3.7.css" rel="stylesheet">
+    <link href="css/feedback.css" rel="stylesheet"/>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+    <header class="row header-row">
+        <div class="col-xs-3 col-md-3">
+            <img src="img/udacity_logo.png" alt="udacitylogo">
+        </div>
+        <div class="col-xs-7 col-xs-offset-2 col-md-6 col-md-offset-3 header-title">
+            <h1>Svitlana Konopatska</h1>
+            <h3>Front-End Ninja</h3>
+        </div>
+    </header>
+
+    <main>
+        <section id="main-features" class="row">
+            <div class="col-md-12">
+                <img src="img/biotechnologist.jpg" class="main-image" alt="mainimage">
+            </div>
+        </section>
+        <section id="features" class="row">
+            <div class="featured-title">
+                <h2>Streptomyces recifensis var. lyticus under a microscope</h2>
+            </div>
+            <div class="col-md-4 col-xs-12 feature-item">
+                <img src="img/bacteria1.jpg" class="content-image" alt="streptomyces1">
+                <h3>Grown on nutrient medium 1</h3>
+                <p><a href="https://github.com/svvik" target="_blank">https://github.com/svvik</a></p>
+            </div>
+            <div class="col-md-4 col-xs-12 feature-item">
+                <img src="img/bacteria2.jpg" class="content-image" alt="streptomyces2">
+                <h3>Grown on nutrient medium 2</h3>
+                <p><a href="https://github.com/svvik" target="_blank">https://github.com/svvik</a></p>
+            </div>
+            <div class="col-md-4 col-xs-12 feature-item">
+                <img src="img/bacteria3.jpg" class="content-image" alt="streptomyces3">
+                <h3>Grown on nutrient medium 3</h3>
+                <p><a href="https://github.com/svvik" target="_blank">https://github.com/svvik</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 text-left">
+                <p>Contact information:</p>
+                <p>
+                    <a href="mailto:svetlana_viktorovna@meta.ua">svetlana_viktorovna@meta.ua</a>
+                </p>
+            </div>
+            <div class="col-xs-12 col-md-6 linkedin-info">
+                <p>
+                    <img src="img/linkedin.png" id="linkedin-logo" alt="linkedin">
+                    <a href="https://www.linkedin.com/in/svetlana-konopatska-9a118261/">Follow me on LinkedIn</a>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>©2018 Design by Svitlana. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script src="js/feedback.js"></script>
+</div>
+
+<!--
+    The following block comes from jquery feedback plugin
+    https://www.jqueryscript.net/form/Simple-jQuery-Plugin-For-Popup-Feedback-Form-Feedback.html under MIT license.
+-->
+<div id="feedback">
+    <div id="feedback-form" class="col-xs-4 col-md-4 panel panel-default feedback-display">
+        <form method="POST" class="form panel-body">
+            <div class="form-group">
+                <input class="form-control" name="email" autofocus placeholder="Your e-mail" type="email"/>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" name="body" required placeholder="Please write your feedback here..." rows="5"></textarea>
+            </div>
+            <button class="btn btn-primary pull-right" type="submit">Send</button>
+        </form>
+    </div>
+    <div id="feedback-tab">Feedback</div>
+</div>
+</body>
+</html>
